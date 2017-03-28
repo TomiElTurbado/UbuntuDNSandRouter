@@ -123,3 +123,33 @@ Una vez estén las IPs configuradas de la manera que indicamos en el servidor DN
 ![accediendo wikipedia](/GRAFICO/GRAFICO_wikipedia.png)
 
 #### Accediendo a `www.wikipedia.org` desde el Ubuntu con entorno gráfico mediante nuestro Ubuntu configurado como Router.
+
+## RAID FÍSICO
+
+### BIOS
+
+- Se accede a la bios pulsando `F2` en el inicio. Y seleccionamos **Integraded Devices** para activar la RAID.
+
+![BIOS1](/RAID_FISICA/1bios1.jpg)
+
+![BIOS2](/RAID_FISICA/2bios2.jpg)
+
+- Se reinicia y se pulsa `F10` en el inicio y después `Control + M` para acceder a las utilidades de configuración. Una vez ahí se accede a **Configuration** y dentro de ésta a **Easy Configuration**. Ahí se seleccionan con `ESPACIO` los discos duros a utilizar en la raid.
+
+![UTILITIES1](/RAID_FISICA/3easyconfig1.jpg)
+
+- Se pulsa enter una vez seleccionados todos los discos que formarán parte de la raid, se pulsa `ESPACIO` para decidir los arrays a usar, y `F10` para continuar.
+
+![UTILITIES2](/RAID_FISICA/4easyconfig2.jpg)
+
+- Tras esto se elige el tipo de RAID a crear y se confirma.
+
+![UTILITIES3](/RAID_FISICA/6easyconfig4.jpg)
+
+- Una vez se ha confirmado la creación del RAID, ha de ser inicializado mediante la opción **Initialize** del menú. Se usa espacio para seleccinar las unidades a inicializar, y se pulsa `F10` para comenzar el proceso.
+
+![UTILITIES4](/RAID_FISICA/7initialization.jpg)
+
+- Tras esto solo hay que salir de la pantalla de utilidades. Aparecerá la RAID lista para usar en la instalación del sistema operativo.
+
+![INSTALLUBUNTUSERVER](/RAID_FISICA/8raidonlinux.jpg)
